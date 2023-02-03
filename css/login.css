@@ -1,8 +1,10 @@
 body{
-    background-image:url("imagenes/merli.jpg");
+    background-image:url("../imagenes/merli.jpg");
+    background-repeat: no-repeat;
 }
 
 .flexContainer{
+    
     display: flex;
     align-items: center;
     justify-content: center;
