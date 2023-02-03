@@ -30,6 +30,20 @@ function comprobarToken ($tokenSesion, $tokenCreado){
 
     return $coinciden;
 }
+
+function conectarBBDD(){
+    $dns = 'mysql:dbname=$bbdd;host=db';
+    $usuario = "alumnado";
+    $clave= "alumnado";
+    try {
+        
+        $bd = new PDO($dns, $usuario, $clave);
+        echo "Conexión a la base de datos con éxito.<br>"; 
+        
+    } catch (PDOException $e) {
+        echo 'Falló la conexión: '.$e->getMessage();
+    }
+}
 /*
 function nuevoUsuario($id, $clave, $rol) {
 
