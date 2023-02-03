@@ -1,0 +1,12 @@
+body{
+    background-image:url("imagenes/merli.jpg");
+}
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
